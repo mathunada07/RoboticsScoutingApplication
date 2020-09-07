@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>367852952446-dkfh8v4k3nvbvqtlm1oe8dlqfdtk4bej.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.367852952446-dkfh8v4k3nvbvqtlm1oe8dlqfdtk4bej</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCaWv6f7wyUlfwN7y54bFiCkEvQ5fxI2yc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>367852952446</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.4939scouting.4939</string>
+	<key>PROJECT_ID</key>
+	<string>scouting-firebase</string>
+	<key>STORAGE_BUCKET</key>
+	<string>scouting-firebase.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:367852952446:ios:f634fa1d9a5cbda3f4f12f</string>
+	<key>DATABASE_URL</key>
+	<string>https://scouting-firebase.firebaseio.com</string>
+</dict>
+</plist>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9817476A2505944500052932 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981747692505944500052932 /* RoundButton.swift */; };
 		9870E49E24C7708900D717DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870E49D24C7708900D717DF /* AppDelegate.swift */; };
 		9870E4A024C7708900D717DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870E49F24C7708900D717DF /* SceneDelegate.swift */; };
 		9870E4A224C7708900D717DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870E4A124C7708900D717DF /* ViewController.swift */; };
@@ -15,6 +16,7 @@
 		9870E4AA24C7709000D717DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9870E4A824C7709000D717DF /* LaunchScreen.storyboard */; };
 		9870E4B524C7709000D717DF /* TestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870E4B424C7709000D717DF /* TestingTests.swift */; };
 		9870E4C024C7709000D717DF /* TestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870E4BF24C7709000D717DF /* TestingUITests.swift */; };
+		988102062506CE38005917F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 988102052506CE38005917F7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		981747692505944500052932 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		9870E49A24C7708900D717DF /* Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9870E49D24C7708900D717DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9870E49F24C7708900D717DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		9870E4BB24C7709000D717DF /* TestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9870E4BF24C7709000D717DF /* TestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingUITests.swift; sourceTree = "<group>"; };
 		9870E4C124C7709000D717DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		988102052506CE38005917F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +107,11 @@
 				9870E49F24C7708900D717DF /* SceneDelegate.swift */,
 				9870E4A124C7708900D717DF /* ViewController.swift */,
 				9870E4A324C7708900D717DF /* Main.storyboard */,
+				981747692505944500052932 /* RoundButton.swift */,
 				9870E4A624C7709000D717DF /* Assets.xcassets */,
 				9870E4A824C7709000D717DF /* LaunchScreen.storyboard */,
 				9870E4AB24C7709000D717DF /* Info.plist */,
+				988102052506CE38005917F7 /* GoogleService-Info.plist */,
 			);
 			path = Testing;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9870E4AA24C7709000D717DF /* LaunchScreen.storyboard in Resources */,
+				988102062506CE38005917F7 /* GoogleService-Info.plist in Resources */,
 				9870E4A724C7709000D717DF /* Assets.xcassets in Resources */,
 				9870E4A524C7708900D717DF /* Main.storyboard in Resources */,
 			);
@@ -258,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9817476A2505944500052932 /* RoundButton.swift in Sources */,
 				9870E4A224C7708900D717DF /* ViewController.swift in Sources */,
 				9870E49E24C7708900D717DF /* AppDelegate.swift in Sources */,
 				9870E4A024C7708900D717DF /* SceneDelegate.swift in Sources */,
@@ -440,7 +448,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Mathurshan.Testing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.4939scouting.4939;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,7 +466,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Mathurshan.Testing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.4939scouting.4939;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

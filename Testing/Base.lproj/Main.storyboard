@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,110 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Testing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="nonRotating9" translatesAutoresizingMaskIntoConstraints="NO" id="tVF-8n-41y">
+                                <rect key="frame" x="51" y="50" width="922" height="683"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="rotatingRing" translatesAutoresizingMaskIntoConstraints="NO" id="61u-01-TcI">
+                                <rect key="frame" x="51" y="50" width="922" height="683"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="S4Z-uO-aG4">
+                                <rect key="frame" x="0.0" y="400" width="1024" height="1638.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aET-iz-Wp8">
+                                <rect key="frame" x="51" y="975.5" width="922" height="136.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gca-ME-fQH" customClass="RoundButton" customModule="Testing" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="922" height="136.5"/>
+                                        <color key="backgroundColor" red="0.078431372550000003" green="0.1960784314" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="25"/>
+                                        <state key="normal" title="SCOUTING">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tVF-8n-41y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="06S-q5-asz"/>
+                            <constraint firstItem="61u-01-TcI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="CBF-6T-KAk"/>
+                            <constraint firstItem="S4Z-uO-aG4" firstAttribute="top" secondItem="tVF-8n-41y" secondAttribute="top" multiplier="8" id="HTL-7b-cHN">
+                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="61u-01-TcI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="0.5" constant="20" id="KHd-5O-h91"/>
+                            <constraint firstItem="aET-iz-Wp8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="Lki-Kc-E6v"/>
+                            <constraint firstItem="aET-iz-Wp8" firstAttribute="top" secondItem="S4Z-uO-aG4" secondAttribute="centerY" multiplier="0.8" id="YSm-nj-Inf"/>
+                            <constraint firstItem="61u-01-TcI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="Ymn-Hd-tpw"/>
+                            <constraint firstItem="aET-iz-Wp8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ejL-bZ-EPn"/>
+                            <constraint firstItem="tVF-8n-41y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="fH2-ny-5Xe"/>
+                            <constraint firstItem="aET-iz-Wp8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="gha-be-Tpf"/>
+                            <constraint firstItem="tVF-8n-41y" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="gkh-eE-Cj4"/>
+                            <constraint firstItem="61u-01-TcI" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="ij7-Rp-LxW"/>
+                            <constraint firstItem="S4Z-uO-aG4" firstAttribute="top" secondItem="tVF-8n-41y" secondAttribute="bottom" multiplier="0.7" id="nZi-A1-HUo"/>
+                            <constraint firstItem="S4Z-uO-aG4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qaH-87-62H"/>
+                            <constraint firstAttribute="trailing" secondItem="S4Z-uO-aG4" secondAttribute="trailing" id="rSO-d9-bfH"/>
+                            <constraint firstItem="tVF-8n-41y" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="sDx-zD-3wg"/>
+                            <constraint firstItem="S4Z-uO-aG4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tPt-vZ-0zE"/>
+                            <constraint firstItem="tVF-8n-41y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="0.5" constant="20" id="xMT-da-fCJ"/>
+                            <constraint firstItem="S4Z-uO-aG4" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1.6" id="yX7-H2-QPa"/>
+                            <constraint firstItem="61u-01-TcI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yvY-if-8Zf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CBF-6T-KAk"/>
+                                <exclude reference="KHd-5O-h91"/>
+                                <exclude reference="fH2-ny-5Xe"/>
+                                <exclude reference="xMT-da-fCJ"/>
+                                <exclude reference="HTL-7b-cHN"/>
+                                <exclude reference="nZi-A1-HUo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="KHd-5O-h91"/>
+                                <include reference="xMT-da-fCJ"/>
+                                <include reference="nZi-A1-HUo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="KHd-5O-h91"/>
+                                <include reference="xMT-da-fCJ"/>
+                                <include reference="nZi-A1-HUo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="CBF-6T-KAk"/>
+                                <include reference="fH2-ny-5Xe"/>
+                                <include reference="HTL-7b-cHN"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="ScoutingButton" destination="Gca-ME-fQH" id="4Cy-64-UFc"/>
+                        <outlet property="ring" destination="61u-01-TcI" id="wF4-9e-BHO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GreenBackground" width="125.5" height="194"/>
+        <image name="nonRotating9" width="1182" height="1182"/>
+        <image name="rotatingRing" width="1182" height="1182"/>
+    </resources>
 </document>
