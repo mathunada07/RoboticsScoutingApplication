@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,23 +12,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Testing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="nonRotating9" translatesAutoresizingMaskIntoConstraints="NO" id="tVF-8n-41y">
-                                <rect key="frame" x="51" y="50" width="922" height="683"/>
+                                <rect key="frame" x="19" y="20" width="337.5" height="333.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="rotatingRing" translatesAutoresizingMaskIntoConstraints="NO" id="61u-01-TcI">
-                                <rect key="frame" x="51" y="50" width="922" height="683"/>
+                                <rect key="frame" x="19" y="20" width="337.5" height="333.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="S4Z-uO-aG4">
-                                <rect key="frame" x="0.0" y="400" width="1024" height="1638.5"/>
+                                <rect key="frame" x="0.0" y="247.5" width="375" height="600"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aET-iz-Wp8">
-                                <rect key="frame" x="51" y="975.5" width="922" height="136.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="aET-iz-Wp8">
+                                <rect key="frame" x="19" y="438" width="337.5" height="151"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gca-ME-fQH" customClass="RoundButton" customModule="Testing" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="922" height="136.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="50.5"/>
                                         <color key="backgroundColor" red="0.078431372550000003" green="0.1960784314" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="25"/>
                                         <state key="normal" title="SCOUTING">
@@ -41,6 +41,24 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="ScoutingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sp8-3x-Wv4"/>
+                                            <segue destination="cza-dk-K3T" kind="modal" modalPresentationStyle="fullScreen" id="vTa-u6-wg0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuJ-QB-nXr" customClass="RoundButton" customModule="Testing" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100.5" width="337.5" height="50.5"/>
+                                        <color key="backgroundColor" red="0.078431372550000003" green="0.1960784314" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="25"/>
+                                        <state key="normal" title="SETTINGS">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="ScoutingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGD-mq-JPz"/>
+                                            <segue destination="Z4n-sF-zD5" kind="modal" modalPresentationStyle="fullScreen" id="eYl-Ls-tj3"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -55,11 +73,11 @@
                             </constraint>
                             <constraint firstItem="61u-01-TcI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="0.5" constant="20" id="KHd-5O-h91"/>
                             <constraint firstItem="aET-iz-Wp8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="Lki-Kc-E6v"/>
+                            <constraint firstItem="aET-iz-Wp8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.226667" id="R5l-G6-Xqi"/>
                             <constraint firstItem="aET-iz-Wp8" firstAttribute="top" secondItem="S4Z-uO-aG4" secondAttribute="centerY" multiplier="0.8" id="YSm-nj-Inf"/>
                             <constraint firstItem="61u-01-TcI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="Ymn-Hd-tpw"/>
                             <constraint firstItem="aET-iz-Wp8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ejL-bZ-EPn"/>
                             <constraint firstItem="tVF-8n-41y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="fH2-ny-5Xe"/>
-                            <constraint firstItem="aET-iz-Wp8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="gha-be-Tpf"/>
                             <constraint firstItem="tVF-8n-41y" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="gkh-eE-Cj4"/>
                             <constraint firstItem="61u-01-TcI" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="ij7-Rp-LxW"/>
                             <constraint firstItem="S4Z-uO-aG4" firstAttribute="top" secondItem="tVF-8n-41y" secondAttribute="bottom" multiplier="0.7" id="nZi-A1-HUo"/>
@@ -112,6 +130,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DGf-JV-S1w">
+            <objects>
+                <viewController id="Z4n-sF-zD5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JOB-6e-onl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dAP-vN-TMs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PPN-qN-TFI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Xq-mM-JZ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="858"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xrO-Rh-nTM">
+            <objects>
+                <viewController id="cza-dk-K3T" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4nY-hf-TFF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ddG-9k-zXV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5jM-5A-wez"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apu-nN-AHt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992" y="142"/>
         </scene>
     </scenes>
     <resources>
