@@ -39,6 +39,9 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="ScoutingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sp8-3x-Wv4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

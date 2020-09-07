@@ -18,5 +18,9 @@ class ViewController: UIViewController {
         }))
         // Do any additional setup after loading the view.
     }
-
+    //Mark: Actions
+    
+    @IBAction func ScoutingButton(_ sender: UIButton) {
+        
+    }
 }
